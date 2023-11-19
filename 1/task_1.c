@@ -7,6 +7,7 @@ float* IterationMethod(float, int);
 float* HalfDivMethod(float, float, float, int);
 float* GoldenRatioMethod(float, float, float, int);
 float* NewtonMethod(float, int);
+float* LaguerreMethod(float, int);
 
 int DataForM(float, int);
 int DataForE(float, int);
@@ -18,7 +19,7 @@ int main() {
     float Rp = 350.0;
     float a = (Ra + Rp) / 2;
     float e = (Ra - Rp) / (Ra + Rp);
-    int T = 10695;
+    float T = 10695.0;
     DataForM(e, T);
     DataForE(e, T);
     DataForTHETA(e, T);
@@ -27,11 +28,10 @@ int main() {
 
 
 float* IterationMethod(float e, int T) {
-    int iterations = T;
-    float* E_ARR = (float*)malloc(iterations * sizeof(float));
+    float* E_ARR = (float*)malloc(T * sizeof(float));
     E_ARR[0] = 0;
-    for(int i = 1; i < iterations; i++) {
-        int M = (2 * 3.14 / T) * i;
+    for(int i = 1; i < T; i++) {
+        float M = (2 * 3.14 / T) * i;
         E_ARR[i] = e * sin(E_ARR[i - 1]) + M;
     }
 
@@ -39,14 +39,13 @@ float* IterationMethod(float e, int T) {
 }
 
 float* HalfDivMethod(float e, float A, float B, int T) {
-    int iterations = T;
     int i = 0;
-    float* E_ARR = (float*)malloc(iterations * sizeof(float));
+    float* E_ARR = (float*)malloc(T * sizeof(float));
     int flag = 0;
     float C;
 
-    while ((i < iterations) && ((B - A) < SIGMA)) {
-        int M = (2 * 3.14 / T) * i;
+    while ((i < T) && ((B - A) > SIGMA)) {
+        float M = (2 * 3.14 / T) * i;
         if (flag == 0) {
             C = (B + A) / 2;
         }
@@ -59,32 +58,35 @@ float* HalfDivMethod(float e, float A, float B, int T) {
         float Eb = B - e * sin(B) - M;
         float Ec = C - e * sin(C) - M;
 
-        if (Ea * Ec <= 0) {
+        if (Ea * Ec <= 0.0) {
             B = C;
         }
         else {
             A = C;
         }
 
-        if ((A < 0 && B < 0) || (A > 0 && B > 0)) {
+        if ((A < 0.0 && B < 0.0) || (A > 0.0 && B > 0.0)) {
             flag = 1;
         }
 
         E_ARR[i] = Ec;
         i++;
+        
+        if (E_ARR[i] == E_ARR[i - 1]) {
+            break;
+        }
     }
 
     return E_ARR;
 }
 
 float* GoldenRatioMethod(float e, float A, float B, int T) {
-    int iterations = T;
     int i = 0;
-    float* E_ARR = (float*)malloc(iterations * sizeof(float));
+    float* E_ARR = (float*)malloc(T * sizeof(float));
     int flag = 0;
     float C;
 
-    while ((i < iterations) && ((B - A) < SIGMA)) {
+    while ((i < T) && ((B - A) > SIGMA)) {
         int M = (2 * 3.14 / T) * i;
         if (flag == 0) {
             C = (B + A) / 1.618;
@@ -117,14 +119,28 @@ float* GoldenRatioMethod(float e, float A, float B, int T) {
 }
 
 float* NewtonMethod(float e, int T) {
-    int iterations = T;
-    float* E_ARR = (float*)malloc(iterations * sizeof(float));
+    float* E_ARR = (float*)malloc(T * sizeof(float));
     E_ARR[0] = 0;
-    for (int i = 1; i < iterations; i++) {
-        int M = (2 * 3.14 / T) * i;
+    for (int i = 1; i < T; i++) {
+        float M = (2 * 3.14 / T) * i;
         float fE = E_ARR[i - 1] - e * sin(E_ARR[i - 1]) - M;
-        float FE = 1 - e * cos(E_ARR[i - 1]); 
-        E_ARR[i] = E_ARR[i - 1] - (fE / FE);
+        float DfE = 1 - e * cos(E_ARR[i - 1]); 
+        E_ARR[i] = E_ARR[i - 1] - (fE / DfE);
+    }
+    return E_ARR;
+}
+
+float* LaguerreMethod(float e, int T) {
+    float* E_ARR = (float*)malloc(T * sizeof(float));
+    int n = 3;
+    E_ARR[0] = 0;
+    for (int i = 1; i < T; i++) {
+        float M = (2 * 3.14 / T) * i;
+        float fE = E_ARR[i - 1] - e * sin(E_ARR[i - 1]) - M;
+        float DfE = 1 - e * cos(E_ARR[i - 1]);
+        float DDfE = e * sin(E_ARR[i - 1]);
+        float hE = fabs((n - 1) * ((n - 1) * pow(DfE, 2) - n * fE * DDfE));
+        E_ARR[i] = E_ARR[i - 1] - ((fE * n) / (DfE + pow(hE, (1 / 2))));
     }
     return E_ARR;
 }
@@ -142,12 +158,9 @@ int DataForM(float e, int T) {
 int DataForE(float e, int T) {
     FILE *file = fopen("E_Data.txt", "w");
     int iterations = T;
-    float* E_ARR = (float*)malloc(iterations * sizeof(float));
-    E_ARR[0] = 0;
+    float* E_ARR = LaguerreMethod(e, T);
     fprintf(file, "%f \n", E_ARR[0]);
     for (int i = 1; i < T; i++) {
-        float M = (2 * 3.14 / T) * i;
-        E_ARR[i] = M + e * sin(E_ARR[i - 1]);
         fprintf(file, "%f \n", E_ARR[i]);
     }
     fclose(file);
@@ -157,12 +170,9 @@ int DataForE(float e, int T) {
 int DataForTHETA(float e, int T) {
     FILE *file = fopen("THETA_Data.txt", "w");
     int iterations = T;
-    float* E_ARR = (float*)malloc(iterations * sizeof(float));
-    E_ARR[0] = 0;
+    float* E_ARR = LaguerreMethod(e, T);
     fprintf(file, "%f \n", 0);
     for (int i = 1; i < T; i++) {
-        float M = (2 * 3.14 / T) * i;
-        E_ARR[i] = M + e * sin(E_ARR[i - 1]);
         float THETA = atan(tan(E_ARR[i] / 2) * pow((1 + e) / (1 - e), (1 / 2))) / 2;
         fprintf(file, "%f \n", THETA);
     }
