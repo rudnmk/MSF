@@ -9,21 +9,14 @@ float* GoldenRatioMethod(float, float, float, int);
 float* NewtonMethod(float, int);
 float* LaguerreMethod(float, int);
 
-int DataForM(float, int);
-int DataForE(float, int);
-int DataForTHETA(float, int);
-
 
 int main() {
     float Ra = 1017.0;
     float Rp = 350.0;
     float a = (Ra + Rp) / 2;
     float e = (Ra - Rp) / (Ra + Rp);
+    float p = (Ra - Rp) / 2 * a;
     float T = 10695.0;
-    DataForM(e, T);
-    DataForE(e, T);
-    DataForTHETA(e, T);
-    return 0;
 }
 
 
@@ -140,42 +133,7 @@ float* LaguerreMethod(float e, int T) {
         float DfE = 1 - e * cos(E_ARR[i - 1]);
         float DDfE = e * sin(E_ARR[i - 1]);
         float hE = fabs((n - 1) * ((n - 1) * pow(DfE, 2) - n * fE * DDfE));
-        E_ARR[i] = E_ARR[i - 1] - ((fE * n) / (DfE + pow(hE, (1 / 2))));
+        E_ARR[i] = E_ARR[i - 1] - ((fE * n) / (DfE + sqrt(hE)));
     }
     return E_ARR;
-}
-
-int DataForM(float e, int T) {
-    FILE *file = fopen("M_Data.txt", "w");
-    for (int i = 0; i < T; i++) {
-        float M = (2 * 3.14 / T) * i;
-        fprintf(file, "%f \n", M);
-    }
-    fclose(file);
-    return 0;
-}
-
-int DataForE(float e, int T) {
-    FILE *file = fopen("E_Data.txt", "w");
-    int iterations = T;
-    float* E_ARR = LaguerreMethod(e, T);
-    fprintf(file, "%f \n", E_ARR[0]);
-    for (int i = 1; i < T; i++) {
-        fprintf(file, "%f \n", E_ARR[i]);
-    }
-    fclose(file);
-    return 0;
-}
-
-int DataForTHETA(float e, int T) {
-    FILE *file = fopen("THETA_Data.txt", "w");
-    int iterations = T;
-    float* E_ARR = LaguerreMethod(e, T);
-    fprintf(file, "%f \n", 0);
-    for (int i = 1; i < T; i++) {
-        float THETA = atan(tan(E_ARR[i] / 2) * pow((1 + e) / (1 - e), (1 / 2))) / 2;
-        fprintf(file, "%f \n", THETA);
-    }
-    fclose(file);
-    return 0;
 }
