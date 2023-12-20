@@ -23,6 +23,6 @@ surface = figure.add_subplot()
 result_array = np.asarray(data_list).T
 surface.plot(range(T), result_array, color="red", alpha=0.3, label="R", marker="s", markerfacecolor="black", markersize=1)
 plt.legend(loc="upper left")
-surface.set_xlabel("Time(t)")
-surface.set_ylabel("Radius(R)")
+surface.set_xlabel("Time(t), сек.")
+surface.set_ylabel("Radius(R), км")
 plt.show()
