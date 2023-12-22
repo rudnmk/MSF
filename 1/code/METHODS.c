@@ -10,16 +10,6 @@ float* NewtonMethod(float, int);
 float* LaguerreMethod(float, int);
 
 
-int main() {
-    float Ra = 1017.0;
-    float Rp = 350.0;
-    float a = (Ra + Rp) / 2;
-    float e = (Ra - Rp) / (Ra + Rp);
-    float p = (Ra - Rp) / 2 * a;
-    float T = 10695.0;
-}
-
-
 float* IterationMethod(float e, int T) {
     float* E_ARR = (float*)malloc(T * sizeof(float));
     E_ARR[0] = 0;
