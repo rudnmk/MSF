@@ -24,5 +24,5 @@ result_array = np.asarray(data_list).T
 surface.plot(range(T), result_array, color="red", alpha=0.3, label="Vr", marker="s", markerfacecolor="black", markersize=1)
 plt.legend(loc="upper left")
 surface.set_xlabel("Time(t), сек.")
-surface.set_ylabel("Tang Velocity(Vr), км/сек")
+surface.set_ylabel("Radial Velocity(Vr), км/сек")
 plt.show()

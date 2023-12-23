@@ -35,7 +35,7 @@ int DataCollection(float a, float e, float p) {
     for (float i = 0.0; i < T; i++) {
         float M = (2.0 * PI / T) * i;
         float E = e * sin(past_E) + M;
-        float THETA = atan(tan(past_E / 2.0) * sqrt((1 + e) / (1 - e))) / 2.0;
+        float THETA = atan(tan(past_E / 2.0) * sqrt((1 + e) / (1 - e))) * 2.0;
         float radius = p / (1 + e * cos(THETA));
         float Vn = sqrt(μ / p) * (1 + e * cos(THETA));
         float Vr = sqrt(μ / p) * e * sin(THETA);
