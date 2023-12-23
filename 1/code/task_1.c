@@ -41,6 +41,7 @@ int DataCollection(float a, float e, float p) {
         float Vr = sqrt(μ / p) * e * sin(THETA);
         float V = sqrt(pow(Vn, 2.0) + pow(Vr, 2.0));
 
+        //printf("M: %f;  E = %f;  THETA = %f;  R = %f;  Vn = %f;  Vr = %f;  V = %f\n", M, E, THETA, radius, Vn, Vr, V);
         fprintf(M_dat, "%f \n", (M * 180.0 / PI));
         fprintf(E_dat, "%f \n", (E * 180.0 / PI));
         fprintf(THETA_dat, "%f \n", (THETA * 180.0 / PI));
