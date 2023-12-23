@@ -28,7 +28,6 @@ int DataCollection(float a, float e, float p) {
     FILE* V_dat = fopen("Velocity_Data.txt", "w");
 
     float past_E = 0.0;
-    //float T = 2 * PI * sqrt(pow(a, 3) / μ);
     float T = 10695.0;
     fprintf(T_, "%f", T);
     fclose(T_);
@@ -41,10 +40,14 @@ int DataCollection(float a, float e, float p) {
         float Vr = sqrt(μ / p) * e * sin(THETA);
         float V = sqrt(pow(Vn, 2.0) + pow(Vr, 2.0));
 
-        //printf("M: %f;  E = %f;  THETA = %f;  R = %f;  Vn = %f;  Vr = %f;  V = %f\n", M, E, THETA, radius, Vn, Vr, V);
         fprintf(M_dat, "%f \n", (M * 180.0 / PI));
         fprintf(E_dat, "%f \n", (E * 180.0 / PI));
-        fprintf(THETA_dat, "%f \n", (THETA * 180.0 / PI));
+        if (THETA < 0) {
+            fprintf(THETA_dat, "%f \n", (THETA * 180.0 / PI + 360.0));
+        }
+        else {
+            fprintf(THETA_dat, "%f \n", (THETA * 180.0 / PI));
+        }
         fprintf(R_dat, "%f \n", radius);
         fprintf(Vn_dat, "%f \n", Vn);
         fprintf(Vr_dat, "%f \n", Vr);
