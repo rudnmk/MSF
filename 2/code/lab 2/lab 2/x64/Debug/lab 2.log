@@ -1,223 +1,237 @@
 ﻿  Calculation.cpp
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(10,10): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(26,17): warning C4244: =: преобразование "double" в "float", возможна потеря данных
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(35,18): warning C4305: инициализация: усечение из "double" в "float"
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(73,23): warning C4305: инициализация: усечение из "double" в "float"
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(74,18): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(79,17): warning C4244: =: преобразование "double" в "float", возможна потеря данных
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(82,22): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(88,24): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(89,29): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(95,28): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(98,40): warning C4244: =: преобразование "double" в "_Ty", возможна потеря данных
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(98,40): warning C4244:         with
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(98,40): warning C4244:         [
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(98,40): warning C4244:             _Ty=float
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(98,40): warning C4244:         ]
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(99,40): warning C4244: =: преобразование "double" в "_Ty", возможна потеря данных
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(99,40): warning C4244:         with
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(99,40): warning C4244:         [
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(99,40): warning C4244:             _Ty=float
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(99,40): warning C4244:         ]
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(100,49): warning C4244: =: преобразование "double" в "_Ty", возможна потеря данных
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(100,49): warning C4244:         with
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(100,49): warning C4244:         [
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(100,49): warning C4244:             _Ty=float
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(100,49): warning C4244:         ]
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(106,21): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(119,10): warning C4305: инициализация: усечение из "double" в "float"
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(120,10): warning C4305: инициализация: усечение из "double" в "float"
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(124,10): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(127,35): warning C4244: =: преобразование "double" в "_Ty", возможна потеря данных
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(127,35): warning C4244:         with
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(127,35): warning C4244:         [
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(127,35): warning C4244:             _Ty=float
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(127,35): warning C4244:         ]
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(128,52): warning C4244: =: преобразование "double" в "_Ty", возможна потеря данных
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(128,52): warning C4244:         with
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(128,52): warning C4244:         [
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(128,52): warning C4244:             _Ty=float
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(128,52): warning C4244:         ]
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(135,32): warning C4244: =: преобразование "double" в "_Ty", возможна потеря данных
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(135,32): warning C4244:         with
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(135,32): warning C4244:         [
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(135,32): warning C4244:             _Ty=float
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(135,32): warning C4244:         ]
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(138,28): warning C4244: =: преобразование "double" в "_Ty", возможна потеря данных
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(138,28): warning C4244:         with
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(138,28): warning C4244:         [
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(138,28): warning C4244:             _Ty=float
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(138,28): warning C4244:         ]
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(141,28): warning C4244: =: преобразование "double" в "_Ty", возможна потеря данных
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(141,28): warning C4244:         with
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(141,28): warning C4244:         [
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(141,28): warning C4244:             _Ty=float
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(141,28): warning C4244:         ]
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(153,12): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(158,13): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(162,14): warning C4244: =: преобразование "double" в "float", возможна потеря данных
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(165,49): warning C4244: =: преобразование "double" в "_Ty", возможна потеря данных
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(165,49): warning C4244:         with
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(165,49): warning C4244:         [
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(165,49): warning C4244:             _Ty=float
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(165,49): warning C4244:         ]
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(177,29): warning C4305: инициализация: усечение из "double" в "float"
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(177,38): warning C4305: инициализация: усечение из "double" в "float"
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(177,47): warning C4305: инициализация: усечение из "double" в "float"
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(177,56): warning C4305: инициализация: усечение из "double" в "float"
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(177,65): warning C4305: инициализация: усечение из "double" в "float"
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(177,74): warning C4305: инициализация: усечение из "double" в "float"
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(177,83): warning C4305: инициализация: усечение из "double" в "float"
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(178,30): warning C4305: инициализация: усечение из "double" в "float"
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(178,41): warning C4305: инициализация: усечение из "double" в "float"
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(178,52): warning C4305: инициализация: усечение из "double" в "float"
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(178,63): warning C4305: инициализация: усечение из "double" в "float"
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(178,74): warning C4305: инициализация: усечение из "double" в "float"
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(178,85): warning C4305: инициализация: усечение из "double" в "float"
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(178,96): warning C4305: инициализация: усечение из "double" в "float"
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(179,29): warning C4305: инициализация: усечение из "double" в "float"
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(179,41): warning C4305: инициализация: усечение из "double" в "float"
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(179,51): warning C4305: инициализация: усечение из "double" в "float"
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(179,63): warning C4305: инициализация: усечение из "double" в "float"
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(179,75): warning C4305: инициализация: усечение из "double" в "float"
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(179,87): warning C4305: инициализация: усечение из "double" в "float"
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(179,99): warning C4305: инициализация: усечение из "double" в "float"
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(180,38): warning C4838: Преобразование из "double" в "float" требует сужающего преобразования.
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(180,38): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(180,65): warning C4838: Преобразование из "double" в "float" требует сужающего преобразования.
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(180,65): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(180,92): warning C4838: Преобразование из "double" в "float" требует сужающего преобразования.
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(180,92): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(180,120): warning C4838: Преобразование из "double" в "float" требует сужающего преобразования.
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(180,120): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(180,148): warning C4838: Преобразование из "double" в "float" требует сужающего преобразования.
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(180,148): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(180,176): warning C4838: Преобразование из "double" в "float" требует сужающего преобразования.
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(180,176): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(180,204): warning C4838: Преобразование из "double" в "float" требует сужающего преобразования.
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(180,204): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(181,37): warning C4838: Преобразование из "double" в "float" требует сужающего преобразования.
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(181,37): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(181,64): warning C4838: Преобразование из "double" в "float" требует сужающего преобразования.
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(181,64): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(181,91): warning C4838: Преобразование из "double" в "float" требует сужающего преобразования.
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(181,91): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(181,117): warning C4838: Преобразование из "double" в "float" требует сужающего преобразования.
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(181,117): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(181,144): warning C4838: Преобразование из "double" в "float" требует сужающего преобразования.
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(181,144): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(181,171): warning C4838: Преобразование из "double" в "float" требует сужающего преобразования.
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(181,171): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(181,198): warning C4838: Преобразование из "double" в "float" требует сужающего преобразования.
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(181,198): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(182,38): warning C4838: Преобразование из "double" в "float" требует сужающего преобразования.
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(182,38): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(182,67): warning C4838: Преобразование из "double" в "float" требует сужающего преобразования.
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(182,67): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(182,96): warning C4838: Преобразование из "double" в "float" требует сужающего преобразования.
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(182,96): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(182,125): warning C4838: Преобразование из "double" в "float" требует сужающего преобразования.
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(182,125): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(182,154): warning C4838: Преобразование из "double" в "float" требует сужающего преобразования.
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(182,154): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(182,183): warning C4838: Преобразование из "double" в "float" требует сужающего преобразования.
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(182,183): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(182,212): warning C4838: Преобразование из "double" в "float" требует сужающего преобразования.
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(182,212): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(183,37): warning C4838: Преобразование из "double" в "float" требует сужающего преобразования.
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(183,37): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(183,65): warning C4838: Преобразование из "double" в "float" требует сужающего преобразования.
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(183,65): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(183,93): warning C4838: Преобразование из "double" в "float" требует сужающего преобразования.
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(183,93): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(183,121): warning C4838: Преобразование из "double" в "float" требует сужающего преобразования.
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(183,121): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(183,149): warning C4838: Преобразование из "double" в "float" требует сужающего преобразования.
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(183,149): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(183,177): warning C4838: Преобразование из "double" в "float" требует сужающего преобразования.
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(183,177): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(183,205): warning C4838: Преобразование из "double" в "float" требует сужающего преобразования.
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(183,205): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(185,29): warning C4305: инициализация: усечение из "double" в "float"
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(185,39): warning C4305: инициализация: усечение из "double" в "float"
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(185,49): warning C4305: инициализация: усечение из "double" в "float"
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(185,59): warning C4305: инициализация: усечение из "double" в "float"
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(185,69): warning C4305: инициализация: усечение из "double" в "float"
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(185,79): warning C4305: инициализация: усечение из "double" в "float"
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(185,87): warning C4305: инициализация: усечение из "double" в "float"
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(186,30): warning C4305: инициализация: усечение из "double" в "float"
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(186,40): warning C4305: инициализация: усечение из "double" в "float"
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(186,51): warning C4305: инициализация: усечение из "double" в "float"
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(186,62): warning C4305: инициализация: усечение из "double" в "float"
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(186,72): warning C4305: инициализация: усечение из "double" в "float"
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(186,83): warning C4305: инициализация: усечение из "double" в "float"
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(186,94): warning C4305: инициализация: усечение из "double" в "float"
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(187,29): warning C4305: инициализация: усечение из "double" в "float"
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(187,43): warning C4305: инициализация: усечение из "double" в "float"
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(187,56): warning C4305: инициализация: усечение из "double" в "float"
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(187,70): warning C4305: инициализация: усечение из "double" в "float"
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(187,84): warning C4305: инициализация: усечение из "double" в "float"
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(187,106): warning C4838: Преобразование из "double" в "float" требует сужающего преобразования.
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(187,106): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(187,134): warning C4838: Преобразование из "double" в "float" требует сужающего преобразования.
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(187,134): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(188,37): warning C4838: Преобразование из "double" в "float" требует сужающего преобразования.
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(188,37): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(188,64): warning C4838: Преобразование из "double" в "float" требует сужающего преобразования.
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(188,64): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(188,91): warning C4838: Преобразование из "double" в "float" требует сужающего преобразования.
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(188,91): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(188,118): warning C4838: Преобразование из "double" в "float" требует сужающего преобразования.
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(188,118): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(188,144): warning C4838: Преобразование из "double" в "float" требует сужающего преобразования.
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(188,144): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(188,171): warning C4838: Преобразование из "double" в "float" требует сужающего преобразования.
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(188,171): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(188,197): warning C4838: Преобразование из "double" в "float" требует сужающего преобразования.
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(188,197): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(189,37): warning C4838: Преобразование из "double" в "float" требует сужающего преобразования.
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(189,37): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(189,65): warning C4838: Преобразование из "double" в "float" требует сужающего преобразования.
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(189,65): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(189,94): warning C4838: Преобразование из "double" в "float" требует сужающего преобразования.
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(189,94): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(189,123): warning C4838: Преобразование из "double" в "float" требует сужающего преобразования.
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(189,123): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(189,152): warning C4838: Преобразование из "double" в "float" требует сужающего преобразования.
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(189,152): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(189,181): warning C4838: Преобразование из "double" в "float" требует сужающего преобразования.
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(189,181): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(189,209): warning C4838: Преобразование из "double" в "float" требует сужающего преобразования.
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(189,209): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(190,38): warning C4838: Преобразование из "double" в "float" требует сужающего преобразования.
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(190,38): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(190,66): warning C4838: Преобразование из "double" в "float" требует сужающего преобразования.
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(190,66): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(190,92): warning C4838: Преобразование из "double" в "float" требует сужающего преобразования.
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(190,92): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(190,118): warning C4838: Преобразование из "double" в "float" требует сужающего преобразования.
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(190,118): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(190,144): warning C4838: Преобразование из "double" в "float" требует сужающего преобразования.
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(190,144): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(190,172): warning C4838: Преобразование из "double" в "float" требует сужающего преобразования.
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(190,172): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(190,201): warning C4838: Преобразование из "double" в "float" требует сужающего преобразования.
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(190,201): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(191,37): warning C4838: Преобразование из "double" в "float" требует сужающего преобразования.
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(191,37): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(191,66): warning C4838: Преобразование из "double" в "float" требует сужающего преобразования.
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(191,66): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(191,95): warning C4838: Преобразование из "double" в "float" требует сужающего преобразования.
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(191,95): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(191,124): warning C4838: Преобразование из "double" в "float" требует сужающего преобразования.
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(191,124): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(191,153): warning C4838: Преобразование из "double" в "float" требует сужающего преобразования.
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(191,153): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(191,182): warning C4838: Преобразование из "double" в "float" требует сужающего преобразования.
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(191,182): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(191,209): warning C4838: Преобразование из "double" в "float" требует сужающего преобразования.
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(191,209): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(194,41): warning C4244: =: преобразование "double" в "float", возможна потеря данных
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(195,41): warning C4244: =: преобразование "double" в "float", возможна потеря данных
-C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(207,1): warning C4172: возвращение адреса локальной или временной переменной : density
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(34,17): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(51,21): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(57,25): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(96,23): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(97,18): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(102,17): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(105,22): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(111,24): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(112,29): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(118,28): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(121,40): warning C4244: =: преобразование "double" в "_Ty", возможна потеря данных
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(121,40): warning C4244:         with
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(121,40): warning C4244:         [
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(121,40): warning C4244:             _Ty=float
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(121,40): warning C4244:         ]
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(122,40): warning C4244: =: преобразование "double" в "_Ty", возможна потеря данных
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(122,40): warning C4244:         with
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(122,40): warning C4244:         [
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(122,40): warning C4244:             _Ty=float
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(122,40): warning C4244:         ]
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(123,49): warning C4244: =: преобразование "double" в "_Ty", возможна потеря данных
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(123,49): warning C4244:         with
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(123,49): warning C4244:         [
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(123,49): warning C4244:             _Ty=float
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(123,49): warning C4244:         ]
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(129,21): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(142,10): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(143,10): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(147,10): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(150,35): warning C4244: =: преобразование "double" в "_Ty", возможна потеря данных
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(150,35): warning C4244:         with
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(150,35): warning C4244:         [
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(150,35): warning C4244:             _Ty=float
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(150,35): warning C4244:         ]
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(151,52): warning C4244: =: преобразование "double" в "_Ty", возможна потеря данных
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(151,52): warning C4244:         with
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(151,52): warning C4244:         [
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(151,52): warning C4244:             _Ty=float
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(151,52): warning C4244:         ]
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(158,32): warning C4244: =: преобразование "double" в "_Ty", возможна потеря данных
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(158,32): warning C4244:         with
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(158,32): warning C4244:         [
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(158,32): warning C4244:             _Ty=float
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(158,32): warning C4244:         ]
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(161,28): warning C4244: =: преобразование "double" в "_Ty", возможна потеря данных
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(161,28): warning C4244:         with
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(161,28): warning C4244:         [
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(161,28): warning C4244:             _Ty=float
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(161,28): warning C4244:         ]
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(164,28): warning C4244: =: преобразование "double" в "_Ty", возможна потеря данных
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(164,28): warning C4244:         with
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(164,28): warning C4244:         [
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(164,28): warning C4244:             _Ty=float
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(164,28): warning C4244:         ]
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(176,12): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(181,13): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(185,14): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(188,49): warning C4244: =: преобразование "double" в "_Ty", возможна потеря данных
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(188,49): warning C4244:         with
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(188,49): warning C4244:         [
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(188,49): warning C4244:             _Ty=float
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(188,49): warning C4244:         ]
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(200,29): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(200,38): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(200,47): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(200,56): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(200,65): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(200,74): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(200,83): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(201,30): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(201,41): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(201,52): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(201,63): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(201,74): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(201,85): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(201,96): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(202,29): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(202,41): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(202,51): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(202,63): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(202,75): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(202,87): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(202,99): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(203,38): warning C4838: Преобразование из "double" в "float" требует сужающего преобразования.
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(203,38): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(203,65): warning C4838: Преобразование из "double" в "float" требует сужающего преобразования.
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(203,65): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(203,92): warning C4838: Преобразование из "double" в "float" требует сужающего преобразования.
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(203,92): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(203,120): warning C4838: Преобразование из "double" в "float" требует сужающего преобразования.
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(203,120): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(203,148): warning C4838: Преобразование из "double" в "float" требует сужающего преобразования.
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(203,148): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(203,176): warning C4838: Преобразование из "double" в "float" требует сужающего преобразования.
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(203,176): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(203,204): warning C4838: Преобразование из "double" в "float" требует сужающего преобразования.
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(203,204): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(204,37): warning C4838: Преобразование из "double" в "float" требует сужающего преобразования.
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(204,37): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(204,64): warning C4838: Преобразование из "double" в "float" требует сужающего преобразования.
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(204,64): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(204,91): warning C4838: Преобразование из "double" в "float" требует сужающего преобразования.
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(204,91): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(204,117): warning C4838: Преобразование из "double" в "float" требует сужающего преобразования.
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(204,117): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(204,144): warning C4838: Преобразование из "double" в "float" требует сужающего преобразования.
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(204,144): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(204,171): warning C4838: Преобразование из "double" в "float" требует сужающего преобразования.
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(204,171): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(204,198): warning C4838: Преобразование из "double" в "float" требует сужающего преобразования.
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(204,198): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(205,38): warning C4838: Преобразование из "double" в "float" требует сужающего преобразования.
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(205,38): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(205,67): warning C4838: Преобразование из "double" в "float" требует сужающего преобразования.
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(205,67): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(205,96): warning C4838: Преобразование из "double" в "float" требует сужающего преобразования.
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(205,96): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(205,125): warning C4838: Преобразование из "double" в "float" требует сужающего преобразования.
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(205,125): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(205,154): warning C4838: Преобразование из "double" в "float" требует сужающего преобразования.
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(205,154): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(205,183): warning C4838: Преобразование из "double" в "float" требует сужающего преобразования.
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(205,183): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(205,212): warning C4838: Преобразование из "double" в "float" требует сужающего преобразования.
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(205,212): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(206,37): warning C4838: Преобразование из "double" в "float" требует сужающего преобразования.
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(206,37): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(206,65): warning C4838: Преобразование из "double" в "float" требует сужающего преобразования.
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(206,65): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(206,93): warning C4838: Преобразование из "double" в "float" требует сужающего преобразования.
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(206,93): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(206,121): warning C4838: Преобразование из "double" в "float" требует сужающего преобразования.
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(206,121): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(206,149): warning C4838: Преобразование из "double" в "float" требует сужающего преобразования.
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(206,149): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(206,177): warning C4838: Преобразование из "double" в "float" требует сужающего преобразования.
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(206,177): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(206,205): warning C4838: Преобразование из "double" в "float" требует сужающего преобразования.
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(206,205): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(208,29): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(208,39): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(208,49): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(208,59): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(208,69): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(208,79): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(208,87): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(209,30): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(209,40): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(209,51): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(209,62): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(209,72): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(209,83): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(209,94): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(210,29): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(210,43): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(210,56): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(210,70): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(210,84): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(210,106): warning C4838: Преобразование из "double" в "float" требует сужающего преобразования.
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(210,106): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(210,134): warning C4838: Преобразование из "double" в "float" требует сужающего преобразования.
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(210,134): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(211,37): warning C4838: Преобразование из "double" в "float" требует сужающего преобразования.
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(211,37): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(211,64): warning C4838: Преобразование из "double" в "float" требует сужающего преобразования.
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(211,64): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(211,91): warning C4838: Преобразование из "double" в "float" требует сужающего преобразования.
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(211,91): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(211,118): warning C4838: Преобразование из "double" в "float" требует сужающего преобразования.
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(211,118): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(211,144): warning C4838: Преобразование из "double" в "float" требует сужающего преобразования.
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(211,144): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(211,171): warning C4838: Преобразование из "double" в "float" требует сужающего преобразования.
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(211,171): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(211,197): warning C4838: Преобразование из "double" в "float" требует сужающего преобразования.
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(211,197): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(212,37): warning C4838: Преобразование из "double" в "float" требует сужающего преобразования.
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(212,37): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(212,65): warning C4838: Преобразование из "double" в "float" требует сужающего преобразования.
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(212,65): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(212,94): warning C4838: Преобразование из "double" в "float" требует сужающего преобразования.
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(212,94): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(212,123): warning C4838: Преобразование из "double" в "float" требует сужающего преобразования.
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(212,123): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(212,152): warning C4838: Преобразование из "double" в "float" требует сужающего преобразования.
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(212,152): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(212,181): warning C4838: Преобразование из "double" в "float" требует сужающего преобразования.
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(212,181): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(212,209): warning C4838: Преобразование из "double" в "float" требует сужающего преобразования.
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(212,209): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(213,38): warning C4838: Преобразование из "double" в "float" требует сужающего преобразования.
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(213,38): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(213,66): warning C4838: Преобразование из "double" в "float" требует сужающего преобразования.
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(213,66): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(213,92): warning C4838: Преобразование из "double" в "float" требует сужающего преобразования.
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(213,92): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(213,118): warning C4838: Преобразование из "double" в "float" требует сужающего преобразования.
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(213,118): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(213,144): warning C4838: Преобразование из "double" в "float" требует сужающего преобразования.
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(213,144): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(213,172): warning C4838: Преобразование из "double" в "float" требует сужающего преобразования.
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(213,172): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(213,201): warning C4838: Преобразование из "double" в "float" требует сужающего преобразования.
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(213,201): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(214,37): warning C4838: Преобразование из "double" в "float" требует сужающего преобразования.
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(214,37): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(214,66): warning C4838: Преобразование из "double" в "float" требует сужающего преобразования.
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(214,66): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(214,95): warning C4838: Преобразование из "double" в "float" требует сужающего преобразования.
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(214,95): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(214,124): warning C4838: Преобразование из "double" в "float" требует сужающего преобразования.
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(214,124): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(214,153): warning C4838: Преобразование из "double" в "float" требует сужающего преобразования.
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(214,153): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(214,182): warning C4838: Преобразование из "double" в "float" требует сужающего преобразования.
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(214,182): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(214,209): warning C4838: Преобразование из "double" в "float" требует сужающего преобразования.
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(214,209): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(217,41): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(218,41): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(237,42): warning C4244: =: преобразование "double" в "_Ty", возможна потеря данных
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(237,42): warning C4244:         with
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(237,42): warning C4244:         [
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(237,42): warning C4244:             _Ty=float
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(237,42): warning C4244:         ]
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(238,42): warning C4244: =: преобразование "double" в "_Ty", возможна потеря данных
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(238,42): warning C4244:         with
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(238,42): warning C4244:         [
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(238,42): warning C4244:             _Ty=float
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(238,42): warning C4244:         ]
+  lab.cpp
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\lab.cpp(5,21): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\lab.cpp(6,20): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+  Создание кода...
+C:\Users\mk170\MSF\2\code\lab 2\lab 2\Calculation.cpp(230,1): warning C4172: возвращение адреса локальной или временной переменной : density
   lab 2.vcxproj -> C:\Users\mk170\MSF\2\code\lab 2\x64\Debug\lab 2.exe

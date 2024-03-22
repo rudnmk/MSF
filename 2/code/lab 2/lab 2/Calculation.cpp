@@ -1,18 +1,26 @@
 #include "Calculation.h"
 
 
-void calculation() {
+void calculation(float time) {
 	float E_anomaly;
 	float THETA_anomaly;
 	float radial_velocity;
 	float transversal_velocity;
 	float velocity;
-	float T = 2 * PI * sqrt(pow(SMA, 3.0) / grav_param);
 	std::vector<float> AGECS_coords = { 0.0, 0.0, 0.0 };
 	std::vector<float> GCS_coords = { 0.0, 0.0, 0.0 };
 	std::vector<float> geodetic_coords = { 0.0, 0.0, 0.0 };
+	int solar_activity[7] = { 75, 100, 125, 150, 175, 200, 250 };
 	float* density_120 = new float[7];
 	float* density_500 = new float[7];
+
+	float* S_acc_120 = new float[7];
+	float* T_acc_120 = new float[7];
+	float* acc_120 = new float[7];
+
+	float* S_acc_500 = new float[7];
+	float* T_acc_500 = new float[7];
+	float* acc_500 = new float[7];
 
 	//anomaly calculations
 	std::pair <float, float> anomaly_calculation_result = calculate_anomalies();
@@ -27,43 +35,58 @@ void calculation() {
 
 	//calculating spacecraft's position in different coordinate systems
 	AGECS_coords = calculate_AGECS(E_anomaly, THETA_anomaly);
+	//--------------from here on the calculation is time-based-------------------
+	GCS_coords = calculate_GCS(AGECS_coords, time);
+	geodetic_coords = calculate_geodetic_coords(GCS_coords);
+
+	//calculating density and acceleration
+	float* dens_ptr = calculate_density(geodetic_coords[2]);
+	std::array <std::vector <float>, 14> acc_array = calculate_acceleration(dens_ptr, radial_velocity, transversal_velocity, velocity);
+
+	for (int l = 0; l < 14; l++) {
+		if (l < 7) {
+			density_120[l] = *(dens_ptr + l);
+			S_acc_120[l] = acc_array[l][0];
+			T_acc_120[l] = acc_array[l][1];
+			acc_120[l] = sqrt(pow(S_acc_120[l], 2.0) + pow(T_acc_120[l], 2.0));
+		}
+		else {
+			density_500[l - 7] = *(dens_ptr + l);
+			S_acc_500[l - 7] = acc_array[l][0];
+			T_acc_500[l - 7] = acc_array[l][1];
+			acc_500[l - 7] = sqrt(pow(S_acc_500[l - 7], 2.0) + pow(T_acc_500[l - 7], 2.0));
+		}
+	}
+
+
 	//OUTPUT
 	std::cout << "E: " << E_anomaly << "; THETA: " << THETA_anomaly << std::endl;
 	std::cout << "Radial velocity: " << radial_velocity << "; Transversal velocity: " << transversal_velocity << "; Velocity: " << velocity << std::endl;
 	std::cout << "AGECS coordinates: [" << AGECS_coords[0] << ", " << AGECS_coords[1] << ", " << AGECS_coords[2] << "]" << std::endl;
-	//--------------from here on the calculation is time-based-------------------
-	for (float time = 0.19; time <= T; time++) {
-		GCS_coords = calculate_GCS(AGECS_coords, time);
-		geodetic_coords = calculate_geodetic_coords(GCS_coords);
-
-	//calculating density
-		float* ptr = calculate_density(geodetic_coords[2]);
-		for (int l = 0; l < 14; l++) {
-			if (l < 7) {
-				density_120[l] = *(ptr + l);
-			}
-			else {
-				density_500[l - 7] = *(ptr + l);
-			}
-		}
-		//OUTPUT
-		std::cout << "GCS coordinates: [" << GCS_coords[0] << ", " << GCS_coords[1] << ", " << GCS_coords[2] << "]" << std::endl;
-		std::cout << "Geodetic coordinates: [" << geodetic_coords[0] << ", " << AGECS_coords[1] << ", " << geodetic_coords[2] << "]" << std::endl;
-		std::cout << "Density with fixated height = 120 km: ";
-		for (int l = 0; l < 7; l++) {
-			std::cout << density_120[l] << " ";
-		}
-		std::cout << "\nDensity with fixated height = 500 km: ";
-		for (int k = 0; k < 7; k++) {
-			std::cout << density_500[k] << " ";
-		}
-		std::cout << "\n";
-		std::cout << "----------------------------------------------------------------------------------" << std::endl;
+	std::cout << "TIME: " << time << std::endl;
+	std::cout << "GCS coordinates: [" << GCS_coords[0] << ", " << GCS_coords[1] << ", " << GCS_coords[2] << "]" << std::endl;
+	std::cout << "Geodetic coordinates: [" << geodetic_coords[0] << ", " << AGECS_coords[1] << ", " << geodetic_coords[2] << "]" << std::endl;
+	std::cout << "------Density with fixated height = 120 km------" << std::endl;
+	for (int l = 0; l < 7; l++) {
+		std::cout << "Solar activity: " << solar_activity[l] << "; Density: " << density_120[l] << "; S-related acceleration: " << S_acc_120[l] << "; T_related acceleration: " << T_acc_120[l] << "; Acceleration: " << acc_120[l] << std::endl;
 	}
+	std::cout << "------Density with fixated height = 500 km------" << std::endl;;
+	for (int k = 0; k < 7; k++) {
+		std::cout << "Solar activity: " << solar_activity[k] << "; Density: " << density_500[k] << "; S-related acceleration: " << S_acc_500[k] << "; T_related acceleration: " << T_acc_500[k] << "; Acceleration: " << acc_500[k] << std::endl;
+	}
+	std::cout << "\n";
+	std::cout << "----------------------------------------------------------------------------------" << std::endl;
+
 
 
 	delete[] density_120;
 	delete[] density_500;
+	delete[] S_acc_120;
+	delete[] T_acc_120;
+	delete[] acc_120;
+	delete[] S_acc_500;
+	delete[] T_acc_500;
+	delete[] acc_500;
  }
 
 
@@ -205,4 +228,16 @@ float *calculate_density(float H) {
 	}
 
 	return density;
+}
+
+std::array<std::vector <float>, 14> calculate_acceleration(float* density, float radial_vel, float transversal_vel, float vel) {
+	std::array<std::vector <float>, 14> acc;
+	std::vector <float> acc_ = { 0.0, 0.0, 0.0 };
+	for (int l = 0; l < 14; l++) {
+		acc_[0] = SIGMA * *(density + l) * vel * radial_vel;
+		acc_[1] = SIGMA * *(density + l) * vel * transversal_vel;
+		acc[l] = acc_;
+	}
+
+	return acc;
 }
