@@ -11,9 +11,6 @@ void calculation(double time) {
 	std::vector<double> GCS_coords = { 0.0, 0.0, 0.0 };
 	std::vector<double> geodetic_coords = { 0.0, 0.0, 0.0 };
 
-	std::ofstream data_input;
-	data_input.open("C:/Users/mk170/MSF/2/code/lab 2/lab 2 graph/DATA.txt", std::ofstream::app);
-
 	//anomaly calculations
 	std::pair <double, double> anomaly_calculation_result = calculate_anomalies();
 	E_anomaly = anomaly_calculation_result.first;
@@ -29,20 +26,12 @@ void calculation(double time) {
 	AGECS_coords = calculate_AGECS(E_anomaly, THETA_anomaly);
 	//--------------from here on the calculation is time-based-------------------//
 	GCS_coords = calculate_GCS(AGECS_coords, time);
+
 	geodetic_coords = calculate_geodetic_coords(GCS_coords);
 
 	//calculating density and acceleration
 	calculate_density_and_acceleration(geodetic_coords[2], radial_velocity, transversal_velocity, velocity);
 
-	//OUTPUT
-	data_input << "---------------------TIME: " << time << " ---------------------" << std::endl;
-	data_input << "Semi - major axis(SMA): " << SMA << "; Eccentricity(ECC) : " << ECC << "; Focal param: " << P << "; E: " << E_anomaly << "; THETA: " << THETA_anomaly << std::endl;
-	data_input << "Radial velocity: " << radial_velocity << "; Transversal velocity: " << transversal_velocity << "; Velocity: " << velocity << std::endl;
-	data_input << "AGECS coordinates: [" << AGECS_coords[0] << ", " << AGECS_coords[1] << ", " << AGECS_coords[2] << "]" << std::endl;
-	data_input << "GCS coordinates: [" << GCS_coords[0] << ", " << GCS_coords[1] << ", " << GCS_coords[2] << "]" << std::endl;
-	data_input << std::setprecision(20) <<"Geodetic coordinates: [" << geodetic_coords[0] << ", " << AGECS_coords[1] << ", " << geodetic_coords[2] << "]" << std::endl;
-
-	data_input.close();
  }
 
 
@@ -94,7 +83,7 @@ std::vector<double> calculate_GCS(std::vector<double> AGECS_coords, double time)
 
 std::vector<double> calculate_geodetic_coords(std::vector<double> GCS_coords) {
 	std::vector<double> geodetic_coords = { 0.0, 0.0, 0.0 };
-
+	std::ofstream data_input;
 	double a = 6378.136;
 	double e = 0.0067385254;
 	double x = GCS_coords[0];

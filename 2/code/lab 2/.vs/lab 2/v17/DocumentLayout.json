@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\mk170\\MSF\\2\\code\\lab 2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2275506A-99A4-431D-9E76-D1BCD65999EC}|lab 2\\lab 2.vcxproj|C:\\Users\\mk170\\MSF\\2\\code\\lab 2\\lab 2\\Calculation.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{2275506A-99A4-431D-9E76-D1BCD65999EC}|lab 2\\lab 2.vcxproj|solutionrelative:lab 2\\Calculation.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{2275506A-99A4-431D-9E76-D1BCD65999EC}|lab 2\\lab 2.vcxproj|C:\\Users\\mk170\\MSF\\2\\code\\lab 2\\lab 2\\lab.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2275506A-99A4-431D-9E76-D1BCD65999EC}|lab 2\\lab 2.vcxproj|solutionrelative:lab 2\\lab.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2275506A-99A4-431D-9E76-D1BCD65999EC}|lab 2\\lab 2.vcxproj|C:\\Users\\mk170\\MSF\\2\\code\\lab 2\\lab 2\\Calculation.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{2275506A-99A4-431D-9E76-D1BCD65999EC}|lab 2\\lab 2.vcxproj|solutionrelative:lab 2\\Calculation.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2275506A-99A4-431D-9E76-D1BCD65999EC}|lab 2\\lab 2.vcxproj|C:\\Users\\mk170\\MSF\\2\\code\\lab 2\\lab 2\\lab.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{2275506A-99A4-431D-9E76-D1BCD65999EC}|lab 2\\lab 2.vcxproj|solutionrelative:lab 2\\lab.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{2275506A-99A4-431D-9E76-D1BCD65999EC}|lab 2\\lab 2.vcxproj|C:\\Users\\mk170\\MSF\\2\\code\\lab 2\\lab 2\\Calculation.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2275506A-99A4-431D-9E76-D1BCD65999EC}|lab 2\\lab 2.vcxproj|solutionrelative:lab 2\\Calculation.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,15 +34,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "lab.cpp",
               "DocumentMoniker": "C:\\Users\\mk170\\MSF\\2\\code\\lab 2\\lab 2\\lab.cpp",
               "RelativeDocumentMoniker": "lab 2\\lab.cpp",
               "ToolTip": "C:\\Users\\mk170\\MSF\\2\\code\\lab 2\\lab 2\\lab.cpp",
               "RelativeToolTip": "lab 2\\lab.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAnAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-03-21T18:10:16.74Z"
+              "WhenOpened": "2024-03-21T18:10:16.74Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -52,20 +53,20 @@
               "RelativeDocumentMoniker": "lab 2\\Calculation.h",
               "ToolTip": "C:\\Users\\mk170\\MSF\\2\\code\\lab 2\\lab 2\\Calculation.h",
               "RelativeToolTip": "lab 2\\Calculation.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACYAAAA8AAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAMAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-03-21T17:45:10.946Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Calculation.cpp",
               "DocumentMoniker": "C:\\Users\\mk170\\MSF\\2\\code\\lab 2\\lab 2\\Calculation.cpp",
               "RelativeDocumentMoniker": "lab 2\\Calculation.cpp",
               "ToolTip": "C:\\Users\\mk170\\MSF\\2\\code\\lab 2\\lab 2\\Calculation.cpp",
               "RelativeToolTip": "lab 2\\Calculation.cpp",
-              "ViewState": "AQIAALEAAAAAAAAAAAAAACEAAAAhAAAA",
+              "ViewState": "AQIAAIoAAAAAAAAAAAAAAKEAAAA5AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-03-21T17:44:58.945Z",
               "EditorCaption": ""
