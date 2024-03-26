@@ -7,12 +7,17 @@ void calculation(double time) {
 	double radial_velocity;
 	double transversal_velocity;
 	double velocity;
+	std::string filename = "Time_" + std::to_string(time) + ".txt";
+	std::string path = "C:/Users/mk170/MSF/2/code/lab 2/lab 2 graph/" + filename;
 	std::vector<double> AGECS_coords = { 0.0, 0.0, 0.0 };
 	std::vector<double> GCS_coords = { 0.0, 0.0, 0.0 };
 	std::vector<double> geodetic_coords = { 0.0, 0.0, 0.0 };
 
+	std::ofstream file;
+	file << std::setprecision(20);
+
 	//anomaly calculations
-	std::pair <double, double> anomaly_calculation_result = calculate_anomalies();
+	std::pair <double, double> anomaly_calculation_result = calculate_anomalies(time);
 	E_anomaly = anomaly_calculation_result.first;
 	THETA_anomaly = anomaly_calculation_result.second;
 
@@ -24,29 +29,34 @@ void calculation(double time) {
 
 	//calculating spacecraft's position in different coordinate systems
 	AGECS_coords = calculate_AGECS(E_anomaly, THETA_anomaly);
-	//--------------from here on the calculation is time-based-------------------//
 	GCS_coords = calculate_GCS(AGECS_coords, time);
 
-	geodetic_coords = calculate_geodetic_coords(GCS_coords);
 
 	//calculating density and acceleration
-	calculate_density_and_acceleration(geodetic_coords[2], radial_velocity, transversal_velocity, velocity);
+	file.open(path);
+	file << "E = " << E_anomaly << "; THETA = " << THETA_anomaly << std::endl;
+	file << "Radial V = " << radial_velocity << "; Transversal V = " << transversal_velocity << "; V = " << velocity << std::endl;
+	file << "AGECS = [" << AGECS_coords[0] << "; " << AGECS_coords[1] << "; " << AGECS_coords[2] << "]" << std::endl;
+	file << "GCS = [" << GCS_coords[0] << "; " << GCS_coords[1] << "; " << GCS_coords[2] << "]" << std::endl;
+	geodetic_coords = calculate_geodetic_coords(GCS_coords, path);
+	calculate_density_and_acceleration(geodetic_coords[2], radial_velocity, transversal_velocity, velocity, path);
+	file.close();
 
  }
 
 
 
 
-std::pair<double, double> calculate_anomalies() {
+std::pair<double, double> calculate_anomalies(double time) {
+	float M = M0 + (2.0 * PI / (T)) * time;
 	double E_anomaly_past = M;
 	double E_anomaly = M + ECC * sin(E_anomaly_past);
-
 
 	while (fabs(E_anomaly - E_anomaly_past) > accuracy) {
 		E_anomaly_past = E_anomaly;
 		E_anomaly = M + ECC * sin(E_anomaly_past);
 	}
-
+	
 	double THETA_anomaly = 2 * atan(sqrt((1.0 + ECC) / (1.0 - ECC)) * tan(E_anomaly / 2.0));
 
 	return std::make_pair(E_anomaly, THETA_anomaly);
@@ -81,9 +91,11 @@ std::vector<double> calculate_GCS(std::vector<double> AGECS_coords, double time)
 	return GCS_coords;
 }
 
-std::vector<double> calculate_geodetic_coords(std::vector<double> GCS_coords) {
+std::vector<double> calculate_geodetic_coords(std::vector<double> GCS_coords, std::string path) {
 	std::vector<double> geodetic_coords = { 0.0, 0.0, 0.0 };
-	std::ofstream data_input;
+	std::ofstream file;
+	file.open(path, std::ofstream::app);
+	file << std::setprecision(20);
 	double a = 6378.136;
 	double e = 0.0067385254;
 	double x = GCS_coords[0];
@@ -94,6 +106,9 @@ std::vector<double> calculate_geodetic_coords(std::vector<double> GCS_coords) {
 		geodetic_coords[0] = 0;
 		geodetic_coords[1] = (PI / 2.0) * (z / fabs(z));
 		geodetic_coords[2] = z * sin(geodetic_coords[1]) - a * sqrt(1 - e * pow(sin(geodetic_coords[1]), 2.0));
+		file << "D = " << D << std::endl;
+		file << "L = " << geodetic_coords[0] << "; B = " << geodetic_coords[1] << "; H = " << geodetic_coords[2] << std::endl;
+		file.close();
 		return geodetic_coords;
 	}
 
@@ -104,7 +119,7 @@ std::vector<double> calculate_geodetic_coords(std::vector<double> GCS_coords) {
 		}
 		else if (y < 0 && x < 0) {
 			geodetic_coords[0] = PI + L;
-		}
+ 		}
 		else if (y > 0 && x < 0) {
 			geodetic_coords[0] = PI - L;
 		}
@@ -115,6 +130,9 @@ std::vector<double> calculate_geodetic_coords(std::vector<double> GCS_coords) {
 		if (z == 0) {
 			geodetic_coords[1] = 0;
 			geodetic_coords[2] = D - a;
+			file << "D = " << D << std::endl;
+			file << "L = " << geodetic_coords[0] << "; B = " << geodetic_coords[1] << "; H = " << geodetic_coords[2] << std::endl;
+			file.close();
 			return geodetic_coords;
 		}
 		else {
@@ -123,14 +141,17 @@ std::vector<double> calculate_geodetic_coords(std::vector<double> GCS_coords) {
 			double p = (e * a) / (2 * r);
 			double s1 = 0;
 			double b = c + s1;
-			double s2 = asin((p * sin(2 * b)) / (sqrt(1 - e * pow(sin(b), 2.0))));
+			double s2 = asin((p * sin(2.0 * b)) / (sqrt(1.0 - e * pow(sin(b), 2.0))));
 			while (fabs(s2 - s1) >= ((0.0001 / 3600.0) * PI / 180.0)){
 				s1 = s2;
 				b = c + s1;
 				s2 = asin((p * sin(2 * b)) / (sqrt(1 - e * pow(sin(b), 2.0))));
 			}
 			geodetic_coords[1] = b;
-			geodetic_coords[2] = D * cos(b) + z * sin(b) - a * sqrt(1 - e * pow(sin(b), 2.0));
+			geodetic_coords[2] = (D * cos(b)) + (z * sin(b)) - (a * sqrt(1 - e * pow(sin(b), 2.0)));
+			file << "D = " << D << "; R = " << r << "; C = " << c << "; P = " << p << std::endl;
+			file << "L = " << geodetic_coords[0] << "; B = " << geodetic_coords[1] << "; H = " << geodetic_coords[2] << std::endl;
+			file.close();
 			return geodetic_coords;
 		}
 	}
@@ -138,8 +159,9 @@ std::vector<double> calculate_geodetic_coords(std::vector<double> GCS_coords) {
 }
 
 
-void calculate_density_and_acceleration(double H, double radial_vel, double transversal_vel, double vel) {
+void calculate_density_and_acceleration(double H, double radial_vel, double transversal_vel, double vel, std::string path) {
 	std::ofstream data_input;
+	std::ofstream file;
 	double density;
 	double S_acc;
 	double T_acc;
@@ -170,6 +192,7 @@ void calculate_density_and_acceleration(double H, double radial_vel, double tran
 	}
 
 	data_input.open("C:/Users/mk170/MSF/2/code/lab 2/lab 2 graph/acceleration_data.txt");
+	file.open(path, std::ofstream::app);
 	for (int step = 0; step < 7; step++) {
 		if (lower_than_500) {
 			density = night_density * exp(a_param_0_120[step] + a_param_1_120[step] * H + a_param_2_120[step] * pow(H, 2.0) + a_param_3_120[step] * pow(H, 3.0) + a_param_4_120[step] * pow(H, 4.0) + a_param_5_120[step] * pow(H, 5.0) + a_param_6_120[step] * pow(H, 6.0));
@@ -181,8 +204,9 @@ void calculate_density_and_acceleration(double H, double radial_vel, double tran
 		T_acc = (-1.0) * SIGMA * density * vel * transversal_vel * 1000.0;
 		acc = sqrt(pow(S_acc, 2.0) + pow(T_acc, 2.0));
 		data_input << S_acc << " " << T_acc << " " << W_acc << " " << acc << std::endl;
+		file << "Density = " << density << "; Vector a = {" << S_acc << "; " << T_acc << "; " << W_acc << "}; a = " << acc << std::endl;
 		std::cout << "  g = " << g << "; overall perturbing acceleration = " << acc << std::endl;
 	}
-	data_input << lower_than_500 << std::endl;
 	data_input.close();
+	file.close();
 }

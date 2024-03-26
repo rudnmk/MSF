@@ -7,30 +7,21 @@ with open("acceleration_data.txt", "r") as f:
     f.close()
 
 solar_activity = [75, 100, 125, 150, 175, 200, 250]
-lower_than_500 = 0
 S_acc = []
 T_acc = []
 W_acc = []
 OV_acc = []
 for i in ACC:
-    if len(i.split(" ")) == 1:
-        lower_than_500 = int((i.split(" ")[0]).rstrip("\n"))
-    else:
-        S_acc.append(i.split(" ")[0])
-        T_acc.append(i.split(" ")[1])
-        W_acc.append(i.split(" ")[2])
-        OV_acc.append((i.split(" ")[3]).rstrip("\n"))
-
+    S_acc.append(float(i.split(" ")[0]))
+    T_acc.append(float(i.split(" ")[1]))
+    W_acc.append(float(i.split(" ")[2]))
+    OV_acc.append(float((i.split(" ")[3]).rstrip("\n")))
 
 plt.style.use("ggplot")
 figure, ax1 = plt.subplots()
 figure2, ax2 = plt.subplots()
-if lower_than_500 == 1:
-    figure.suptitle("Graph of the components of the perturbing acceleration depending on the fixated level of solar activity on the first altitude range(120 - 500 km)")
-    figure2.suptitle("Graph of the perturbing acceleration depending on the fixated level of solar activity on the first altitude range(120 - 500 km)")
-else:
-    figure.suptitle("Graph of the components of the perturbing acceleration depending on the fixated level of solar activity on the second altitude range(500 - 1500 km)")
-    figure2.suptitle("Graph of the perturbing acceleration depending on the fixated level of solar activity on the second altitude range(500 - 1500 km)")
+figure.suptitle("Graph of the components of the perturbing acceleration depending on the fixated level of solar activity")
+figure2.suptitle("Graph of the perturbing acceleration depending on the fixated level of solar activity")
 
 
 S_array = np.asarray(S_acc).T
