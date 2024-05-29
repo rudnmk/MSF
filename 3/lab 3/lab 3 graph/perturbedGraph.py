@@ -75,7 +75,7 @@ S = auto(s)
 T = auto(t)
 W = auto(w)
 R = auto(radius)
-print(max(T), min(T))
+print(max(OMEGA), min(OMEGA))
 
 draw(P, "Focal Parameter, km", "P", angleTHETA)
 draw(ECC, "Eccentricity", "ECC", angleTHETA)

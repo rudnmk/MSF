@@ -46,7 +46,7 @@ void perturbed(std::vector<double> THETA, int rounds) {
 		tempT = -(Fa * (1.0 + tempECC * cos(tempTHETA))) / (sqrt(1.0 + pow(tempECC, 2.0) + 2.0 * tempECC * cos(tempTHETA)));
 		double pChange = (2.0 / Mu) * pow(tempR, 3.0) * tempT;
 		double eChange = (pow(tempR, 2.0) / Mu) * (tempS * sin(tempTHETA) + tempT * ((1.0 + (tempR / tempP)) * cos(tempTHETA) + tempECC * (tempR / tempP)));
-		double omChange = (pow(tempR, 2.0) / (Mu * tempECC)) * (tempT * (1.0 + (tempR/tempP)) * cos(tempTHETA) - tempS * cos(tempTHETA));
+		double omChange = (pow(tempR, 2.0) / (Mu * tempECC)) * (tempT * (1.0 + (tempR/tempP)) * sin(tempTHETA) - tempS * cos(tempTHETA));
 		std::cout << "delta p = " << pChange << "; deltaECC = " << eChange << "; delta OMEGA = " << omChange << "." << std::endl;
 
 
